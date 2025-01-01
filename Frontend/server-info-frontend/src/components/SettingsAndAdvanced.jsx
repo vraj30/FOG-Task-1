@@ -11,9 +11,9 @@ const SettingsAndAdvanced = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const settingsResponse = await axios.get('http://localhost:5000/api/settings');
-        const advancedResponse = await axios.get('http://localhost:5000/api/advanced');
-        const rulesResponse = await axios.get('http://localhost:5000/api/rules');
+        const settingsResponse = await axios.get('https://fog-task-1-backend.onrender.com/api/settings');
+        const advancedResponse = await axios.get('https://fog-task-1-backend.onrender.com/api/advanced');
+        const rulesResponse = await axios.get('https://fog-task-1-backend.onrender.com/api/rules');
         setSettings(settingsResponse.data);
         setAdvanced(advancedResponse.data);
         setRules(rulesResponse.data);
