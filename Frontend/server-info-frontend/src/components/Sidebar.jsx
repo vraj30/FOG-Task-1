@@ -3,6 +3,7 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isSquadHovered, setIsSquadHovered] = useState(false); // State for squad image hover
 
   return (
     <div
@@ -11,20 +12,27 @@ const Sidebar = () => {
       onMouseLeave={() => setIsExpanded(false)}
     >
       {/* Squad Section */}
-      <div className="section">
+      <div
+        className="section"
+        onMouseEnter={() => setIsSquadHovered(true)}
+        onMouseLeave={() => setIsSquadHovered(false)}
+      >
         <div className="section-header">
-          <img src="/squad.png" alt="Squad" />
+          <img
+            src= "/squad.png"
+            alt="Squad"
+          />
           <span className="header-text">SQUAD</span>
         </div>
         <div className="section-item">
-          <img src="/join.png" alt="Join" className="item-icon" />
+          <img src={isSquadHovered ? "/joindark.png" : "/join.png"} alt="Join" className="item-icon" />
           {isExpanded && <span className="item-text">Squad Join</span>}
         </div>
       </div>
 
       {/* Online Section */}
       <div className="section">
-      <div className="section-header">
+        <div className="section-header">
           <img src="/online.png" alt="Squad" />
           <span className="header-text">Online</span>
         </div>
@@ -41,7 +49,7 @@ const Sidebar = () => {
 
       {/* Offline Section */}
       <div className="section">
-      <div className="section-header">
+        <div className="section-header">
           <img src="/offline.png" alt="Squad" />
           <span className="header-text">Offline</span>
         </div>
