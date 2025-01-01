@@ -1,0 +1,95 @@
+.current-stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 508.5px;
+  height: 52.05px;
+  font-family: "Rajdhani", sans-serif;
+  flex-wrap: wrap; 
+  margin-bottom: 20px; 
+}
+
+.stat-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.stat-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.stat-button:hover {
+  transform: scale(1.05);
+}
+
+.stat-label {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+}
+
+.stat-group:nth-child(1) .stat-button {
+  width: 83px;
+}
+
+.stat-group:nth-child(2) .stat-button {
+  width: 71px;
+}
+
+.stat-group:nth-child(3) .stat-button {
+  width: 76px;
+}
+
+
+
+@media (max-width: 1372px) {
+  .current-stats {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .current-stats {
+    width: 100%;
+    height: auto;
+    margin-top: 150px; 
+  }
+
+  .stat-group {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .current-stats {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 170px; 
+  }
+
+  .stat-group {
+    width: 100%;
+    text-align: center;
+  }
+}

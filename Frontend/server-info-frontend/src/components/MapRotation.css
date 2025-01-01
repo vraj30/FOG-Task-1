@@ -1,0 +1,112 @@
+.map-rotation {
+  display: grid;
+  justify-content: space-between;
+  width: 75%;
+  padding: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.map-card {
+  flex: 0 0 auto;
+  height: auto;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  margin: 8px;
+}
+
+.map-card:hover {
+  background-color: white;
+}
+
+.map-background {
+  width: auto;
+  height: auto;
+  background-size: auto;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.map-image {
+  width: 100%;
+  height: 5rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.map-info {
+  height: auto;
+  width: auto;
+  padding: 16px 24px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.map-mode,
+.map-name {
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.76px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.map-name {
+  margin-top: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .map-rotation {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 cards per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .map-rotation {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row for tablets */
+    gap: 16px;
+  }
+
+  .map-card {
+    height: 140px;
+  }
+
+  .map-info {
+    padding: 12px 16px;
+  }
+
+  .map-mode,
+  .map-name {
+    font-size: 0.875rem;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-rotation {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+
+  .map-card {
+    height: 120px;
+  }
+
+  .map-info {
+    padding: 8px 12px;
+  }
+
+  .map-mode,
+  .map-name {
+    font-size: 0.75rem;
+    line-height: 18px;
+  }
+}

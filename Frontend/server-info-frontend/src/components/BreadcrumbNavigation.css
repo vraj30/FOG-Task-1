@@ -1,0 +1,56 @@
+.browser__breadcrumb {
+  font-family: "Rajdhani", sans-serif;
+  color: #ffffff;
+  width: 354px;
+  padding: 10px;
+}
+
+.browser__breadcrumb-previous {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.back-icon {
+  width: 7.16px;
+  height: 15.71px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.back-icon:hover {
+  opacity: 0.8;
+}
+
+.previous-page,
+.current-page {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.previous-page:hover,
+.current-page:hover {
+  opacity: 0.8;
+}
+
+.separator {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.browser__breadcrumb-title {
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: 1.38px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.2;
+}

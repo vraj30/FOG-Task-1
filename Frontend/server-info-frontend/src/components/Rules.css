@@ -1,0 +1,81 @@
+.rules-container {
+    width: 324px;
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    background: linear-gradient(to bottom, #3a3a3a, #2a2a2a);
+    padding: 10px 0;
+  }
+  
+  .rules-title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.26px;
+    text-transform: uppercase;
+    margin: 0 0 10px 16.55px;
+  }
+  
+  .rules-content {
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .rule-item {
+    height: 25.95px;
+    display: flex;
+    align-items: center;
+    padding: 0 16.55px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .rule-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .rule-label {
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+  }
+  
+  .rule-value {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    text-align: right;
+    min-width: 30px;
+  }
+  
+  .rule-value.highlighted {
+    color: #f3f300;
+  }
+  
+  .rule-divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0;
+  }
+  
+  .expanded {
+    transform: scale(1.02);
+  }
+  
+  .rule-item:hover .rule-value {
+    color: #f3f300;
+  }
+  
+  .rules-container:hover {
+    box-shadow: 0 0 10px rgba(243, 243, 0, 0.2);
+  }
+  
+  

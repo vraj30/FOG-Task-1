@@ -1,0 +1,97 @@
+.server-intro {
+  font-family: "Rajdhani", sans-serif;
+  color: #fff;
+  width: 100%; /* Use full width for smaller screens */
+  max-width: 865px; /* Retain max width on larger screens */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.server-title {
+  font-size: 1.4rem; /* Use rem for better scalability */
+  font-weight: 600;
+  letter-spacing: 2.16px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.server-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  flex-wrap: wrap; /* Allow wrapping of content on smaller screens */
+}
+
+.flag-icon {
+  width: 16px;
+  height: 8px;
+  object-fit: contain;
+}
+
+.info-text {
+  font-size: 1rem; /* Adjust font size to scale better */
+  font-weight: 600;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.server-description {
+  font-size: 1rem; /* Adjust font size */
+  font-weight: 600;
+  letter-spacing: 0.54px;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+/* Hover effects */
+.server-intro:hover .server-title {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.server-info:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
+}
+
+.server-description:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .server-title {
+    font-size: 1.875rem; /* Smaller font size for mobile */
+  }
+
+  .info-text, .server-description {
+    font-size: 1rem; /* Smaller text size for mobile */
+  }
+
+  .server-info {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start;
+  }
+
+  .flag-icon {
+    width: 20px; /* Increase flag size on smaller screens */
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .server-intro {
+    padding: 10px; /* Less padding for small screens */
+  }
+
+  .server-title {
+    font-size: 1.5rem; /* Even smaller font for very small screens */
+  }
+
+  .info-text, .server-description {
+    font-size: 0.9rem; /* Even smaller text size for very small screens */
+  }
+}

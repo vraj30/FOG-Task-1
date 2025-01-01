@@ -1,0 +1,82 @@
+.action-buttons {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  height: 56px;
+  flex-wrap: wrap;
+  
+}
+
+.action-btn {
+  font-family: "Rajdhani", sans-serif;
+  height: 45px;
+  width: 250px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.action-btn:hover {
+  background-color: #fff;
+  color: black;
+  filter: brightness(1.1);
+}
+
+.favorite-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 56px;
+  width: 140px;
+  background-size: cover;
+  background-position: center;
+}
+
+.favorite-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.favorite-count {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .action-btn {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+
+  .favorite-container {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .action-btn {
+    font-size: 0.8rem;
+  }
+
+  .favorite-count {
+    font-size: 16px;
+  }
+}
