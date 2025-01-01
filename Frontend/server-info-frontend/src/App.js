@@ -10,7 +10,7 @@ import './index.css';
 import Sidebar from './components/Sidebar';
 
 const MainComponent = () => {
-cl
+
   // Data for SettingsAndAdvanced
   // const settings = [
   //   { label: 'Region', value: 'europe - de' },

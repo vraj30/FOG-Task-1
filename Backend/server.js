@@ -1,10 +1,10 @@
 import express from 'express';
 import cors from 'cors';
-
+import dotenv from 'dotenv';
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+dotenv.config();
 
 const data = {
   settings: [
@@ -45,6 +45,6 @@ app.get('/api/settings', (req, res) => res.json(data.settings));
 app.get('/api/advanced', (req, res) => res.json(data.advanced));
 app.get('/api/rules', (req, res) => res.json(data.rules));
 
+const PORT = process.env.PORT;
 
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server is running at http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server is running on ${PORT}`));
